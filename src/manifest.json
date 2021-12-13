@@ -1,0 +1,33 @@
+{
+    "name": "cateye-053",
+    "description": "Suite OCR검사도구(053과제용)",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions" : [
+        "storage", "tabs"
+    ],
+    "background": {
+
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts" : [
+        {
+            "matches":["https://suite-anno-v2.superb-ai.com/*"],
+            "js":["contentScript.js"],
+            "all_frames" : true
+        }
+    ],
+    "web_accessible_resources": [ 
+        {
+            "resources": [ 
+                "main.js",
+                "libraries/*",
+                "tools/*"
+            ],
+            "matches": ["https://suite-anno-v2.superb-ai.com/*"]
+        }
+    ]
+
+}
