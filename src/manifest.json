@@ -1,7 +1,7 @@
 {
     "name": "cateye-053",
-    "description": "Suite OCR검사도구(053과제용)",
-    "version": "0.0.1",
+    "description": "Suite OCR검사도구(33-053/054과제용)",
+    "version": "0.0.2",
     "manifest_version": 3,
     "permissions" : [
         "storage", "tabs"
@@ -29,5 +29,4 @@
             "matches": ["https://suite-anno-v2.superb-ai.com/*"]
         }
     ]
-
 }

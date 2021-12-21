@@ -4,7 +4,7 @@ import { waitElementLoad } from './tools/waitElementLoad.js';
 
 const xpathList = {
     cabinet : '/html/body/div[1]/div[1]/div[2]/div/div[3]/div',
-    labeingTextInput : '/html/body/div[1]/div[1]/div[2]/div/div[3]/div/div[1]/div/div[2]/div[1]/div[2]/div/input',
+    labeingTextInput : '/html/body/div[1]/div[1]/div[2]/div/div[3]/div/div[1]/div/div[2]/div[1]/div[2]/textarea',
 };
 
 const storeList = {
@@ -37,7 +37,7 @@ export const main = () => {
     let fontSize = new goraniStore(storeList.fontSize);
     let topPos = new goraniStore(storeList.topPos);
     let leftPos = new goraniStore(storeList.leftPos);
-    let textValue = 'cateye v0.0.1';
+    let textValue = 'cateye v0.0.2';
 
     let clientx = 0;
     let clienty = 0;
@@ -114,5 +114,5 @@ export const main = () => {
     window.addEventListener('keydown', handleKeydown);
     window.addEventListener('keyup', handleKeyup);
     window.addEventListener('mousemove', handleMousemove);
-    window.addEventListener('click', handleClick);   
+    window.addEventListener('mousedown', handleClick);   
 }
